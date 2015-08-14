@@ -6,8 +6,10 @@
     <title>Checkground by jasonyost</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <link rel="stylesheet" href="stylesheets/demo.css" media="screen" title="no title" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
+    <script src="javascripts/jquery.checkground.min.js" charset="utf-8"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,6 +17,13 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".default-example").checkground();
+        $(".checked-example").checkground();
+      });
+    </script>
 
   </head>
   <body>
@@ -58,6 +67,16 @@
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>input[type=checkbox]<span class="pl-pds">"</span></span>).<span class="pl-c1">checkground</span>();</pre></div>
 
+<div class="test-area">
+  <h3>Minimal Example</h3>
+  <input type="checkbox" name="default-exmaple" value="on" class="default-example">
+</div>
+
+<div class="test-area">
+  <h3>Checked</h3>
+  <input type="checkbox" name="checked-exmaple" value="on" class="checked-example" checked="checked">
+</div>
+
 <h2>
 <a id="parameters" class="anchor" href="#parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parameters</h2>
 
@@ -94,6 +113,6 @@
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
   </body>
 </html>
