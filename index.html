@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Checkground by jasonyost</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jasonyost/checkground">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/jasonyost/checkground/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/jasonyost/checkground/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Checkground</h1>
+          <p>a simple jQuery plugin which replaces the default checkbox control with an easy to style div element</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jasonyost">jasonyost</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="checkground" class="anchor" href="#checkground" aria-hidden="true"><span class="octicon octicon-link"></span></a>checkground</h1>
+
+<h1>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h1>
+
+<p>checkground is a simple jQuery plugin which replaces the default checkbox control with an easy to style div element. checkground hides the original element, and updates the checked property based on the state of the background<br>of the checkground element.</p>
+
+<h1>
+<a id="installation-and-usage" class="anchor" href="#installation-and-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation and usage</h1>
+
+<p>Download or clone the repo and include the <a href="https://raw.githubusercontent.com/jasonyost/checkground/master/dist/jquery.checkground.min.js">jquery.checkground.min.js</a> file in your html. checkground is a jQuery plugin so be sure it is loaded after jQuery</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://code.jquery.com/jquery-2.1.4.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/jquery.checkground.min.js<span class="pl-pds">"</span></span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>checkgound can then be called on the desired input(s)</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>input[type=checkbox]<span class="pl-pds">"</span></span>).<span class="pl-c1">checkground</span>();</pre></div>
+
+<h2>
+<a id="parameters" class="anchor" href="#parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parameters</h2>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>input[type=checkbox]<span class="pl-pds">"</span></span>).<span class="pl-c1">checkground</span>({
+  debug<span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// if set to true will log console messages from checkground</span>
+});</pre></div>
+
+<h2>
+<a id="styling" class="anchor" href="#styling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Styling</h2>
+
+<p>checkground does not add any inline CSS other than to hide the original element you will need to provide styles for the control in your own stylesheet or use the <a href="https://raw.githubusercontent.com/jasonyost/checkground/master/demo/demo.css">demo stylesheet</a></p>
+
+<div class="highlight highlight-css"><pre><span class="pl-e">.checkground-wrapper</span>{
+  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">25<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">25<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">2<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">#13594d</span>;
+  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">3<span class="pl-k">px</span></span>;
+}
+
+<span class="pl-e">.checkground-checked</span>{
+  <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">#abc</span>;
+}</pre></div>
+
+<h2>
+<a id="form-interactions" class="anchor" href="#form-interactions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Form interactions</h2>
+
+<p>checkground updates the original hidden field with the checked property as it changes, the change event of the input is bound to update the display of the control on change.</p>
+
+<h2>
+<a id="thanks" class="anchor" href="#thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks</h2>
+
+<p>Based on the excellent <a href="https://github.com/jquery-boilerplate/jquery-boilerplate">jquery-boilerplate/jquery-boilerplate</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
