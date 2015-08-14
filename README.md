@@ -25,7 +25,7 @@ $("input[type=checkbox]").checkground({
 ```
 
 ## Styling
-checkground does not add any inline CSS other than to hide the original element you will need to provide styles for the control in your own stylesheet or use the [demo stylesheet](https://raw.githubusercontent.com/jasonyost/checkground/master/demo/demo.css)
+checkground does not add any inline CSS other than to hide the original element you will need to provide styles for the control in your own stylesheet or use the [demo stylesheet](https://raw.githubusercontent.com/jasonyost/checkground/master/demo/stylesheets/demo.css)
 
 ```css
 .checkground-wrapper{
