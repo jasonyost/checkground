@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https:////github.com/jasonyost/checkground.git"
+    "url": "git+https://github.com/jasonyost/checkground.git"
   },
   "keywords": [
     "jquery",
@@ -37,5 +37,5 @@
   "bugs": {
     "url": "https://github.com/jasonyost/checkground/issues"
   },
-  "homepage": "https://github.com/jasonyost/checkground#readme"
+  "homepage": "http://jasonyost.github.io/checkground/"
 }
