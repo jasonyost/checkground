@@ -1,0 +1,38 @@
+{
+  "name": "checkground",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jasonyost/checkground",
+  "authors": [
+    "Jason Yost <jyost@gocortexlabs.com>"
+  ],
+  "description": "Simple jQuery checkbox replacer",
+  "main": "src/jquery.checkground.js",
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "checkbox",
+    "checkbox-replacer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jasmine": "~2.3.4",
+    "jasmine-jquery": "~2.1.0"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
