@@ -1,0 +1,14 @@
+.test-area{
+  margin: 25px 0;
+}
+
+.checkground-wrapper{
+  width: 25px;
+  height: 25px;
+  border: 2px solid #13594d;
+  padding: 3px;
+}
+
+.checkground-checked{
+  background-color: #abc;
+}
