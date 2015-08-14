@@ -2,6 +2,8 @@
 # Description
 checkground is a simple jQuery plugin which replaces the default checkbox control with an easy to style div element. checkground hides the original element, and updates the checked property based on the state of the background<br>of the checkground element.
 
+[![build status](https://travis-ci.org/jasonyost/checkground.svg)](https://travis-ci.org/jasonyost/checkground)
+
 # Installation and usage
 Download or clone the repo and include the [jquery.checkground.min.js](https://raw.githubusercontent.com/jasonyost/checkground/master/dist/jquery.checkground.min.js) file in your html. checkground is a jQuery plugin so be sure it is loaded after jQuery
 
